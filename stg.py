@@ -5,15 +5,20 @@ import pyodbc
 import os
 import time
 
+
+database = os.getenv('SQLServerSTGDB')
+user = os.getenv('SQLServerUser')
+password = os.getenv('SQLServerPassword')
+print(user)
 # Connection details
-conn = pyodbc.connect(
-    'DRIVER={ODBC Driver 17 for SQL Server};'
-    'SERVER=DESKTOP-NA5KNSI;'
-    'DATABASE=StaggingDB;'
-    'UID=analyst;'
-    'PWD=analytic;'
-    'Trusted_Connection=yes;'
-)
+# conn = pyodbc.connect(
+#     'DRIVER={ODBC Driver 17 for SQL Server};'
+#     'SERVER=DESKTOP-NA5KNSI;'
+#     f'DATABASE={database};'
+#     f'UID={user};'
+#     f'PWD={password};'
+#     'Trusted_Connection=yes;'
+# )
 
 
 def read_data_from_stg(tbl):
@@ -122,4 +127,5 @@ df['month'] = df['tran_date'].dt.month
 df['day'] = df['tran_date'].dt.day
 df['weekday'] = df['tran_date'].dt.day_name() 
  
-print(df.head())
+# print(df.head())
+
