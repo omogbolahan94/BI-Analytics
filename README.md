@@ -1,5 +1,9 @@
 ### Introduction
-The purpose of this note book is to load data raw data from local file system to Microsoft SQL Server.
+The purpose of this note book is to load data raw data from local file system to Microsoft SQL Server as assigned to me by company CAPPLC.
+
+The complete project is found on this repository: https://github.com/omogbolahan94/BI-Developer
+
+
 
 
 ### Requirements
