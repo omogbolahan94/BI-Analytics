@@ -3,5 +3,5 @@ The purpose of this note book is to load data raw data from local file system to
 
 
 ### Requirements
-* Set up environment variable in a `.env` file 
-* Set your dataset in the Datasets folder and explude the one that is currently in the Datasets folder so that you will tailor it to your need.
+* Set up environment variable in a `.env` file. 
+* Place your dataset in the Datasets folder, and remove the one currently there so you can tailor it to your needs.
