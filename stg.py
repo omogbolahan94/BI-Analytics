@@ -10,6 +10,7 @@ database = os.getenv('SQLServerSTGDB')
 user = os.getenv('SQLServerUser')
 password = os.getenv('SQLServerPassword')
 print(user)
+
 # Connection details
 # conn = pyodbc.connect(
 #     'DRIVER={ODBC Driver 17 for SQL Server};'
