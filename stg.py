@@ -12,14 +12,14 @@ password = os.getenv('SQLServerPassword')
 print(user)
 
 # Connection details
-# conn = pyodbc.connect(
-#     'DRIVER={ODBC Driver 17 for SQL Server};'
-#     'SERVER=DESKTOP-NA5KNSI;'
-#     f'DATABASE={database};'
-#     f'UID={user};'
-#     f'PWD={password};'
-#     'Trusted_Connection=yes;'
-# )
+conn = pyodbc.connect(
+    'DRIVER={ODBC Driver 17 for SQL Server};'
+    'SERVER=DESKTOP-NA5KNSI;'
+    f'DATABASE={database};'
+    f'UID={user};'
+    f'PWD={password};'
+    'Trusted_Connection=yes;'
+)
 
 
 def read_data_from_stg(tbl):
